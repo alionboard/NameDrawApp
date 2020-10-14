@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="NameDrawApp.exe" version="1.0.0.0" publicKeyToken="c460b77147c94925" language="en-US" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="random.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="NameDrawApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="NameDrawApp.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NameDrawApp.exe" size="61856">
+      <assemblyIdentity name="NameDrawApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>c/9+uwv2d4gZbifk8WSJpFuhvXj711/3YXvXBdX7HTE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="700336">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f5ErKKB8Im4L46z7L1fwUFOKugEA+h8L8sOfGh8dqBQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="NameDrawApp.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="random.ico" size="21822">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KYxYMnyapBynUQtT0Wdr3EjirAroyWUMYNA86/cXp60=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=BROKEN\ali" issuerKeyHash="436f5adfd4ec80a3c47463210076348df570bb5e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5bvcx9lFBQEbGuf9L/prkdLFtrBzq1gTB5Rn1fOXtgg=</DigestValue></Reference></SignedInfo><SignatureValue>ew2CwiROviJdoj1ftVN9KN/C+vudXSWMFIPicQ1q7lgrGVs6neF+6ySYqvBXcs5xGrqxLSM7G3TNFnATp/5k+fNjPrZ79U4AleQpiOQpCJU2UNdR4p6ydcdtn1XRl7qMtKoqeNFzD9jyW5XxDad+2hcPaS7lWDfd14D5uNCJrwQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>omLDpmLRyHuAYQk3uklzata3NeK9DIQRQl7xnoRsizQ3gct9OLzmv8E+S3mAzVII04/sVk4f3VmBsDPfkaB8Lr7FApLgxcdKHMEvc23vMgAj815PcBulMVkG9amBm1MY3vcYkUpsThhtBwZuAVEd0GzKkIz5nhBMboyOYm2q3G0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="08b697f3d56794071358ab73b0b6c5d2916bfa2ffde71a1b010545d9c7dcbbe5" Description="" Url=""><as:assemblyIdentity name="NameDrawApp.exe" version="1.0.0.0" publicKeyToken="c460b77147c94925" language="en-US" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BROKEN\ali</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>f0Xqutc1bpFlA+nPIqqaIgXjMTNi0rtsJlzHfX0RybE=</DigestValue></Reference></SignedInfo><SignatureValue>OCaR+nrtxsDb2obROq+E/71s/BmM1kljprKJXRcL9Bq+RSz8a87OT3M/Roi9MRo+BojpyYgeQ3sPzqPH/fAvY5gCd4fFdUBVJ/01uI5Ykkpb6pcXZOU4hJUx7j1rW4dLYrRC5JwVxjTbVtIlgclyWWoMos3kZBXLs+Eb3Tj5wYE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>omLDpmLRyHuAYQk3uklzata3NeK9DIQRQl7xnoRsizQ3gct9OLzmv8E+S3mAzVII04/sVk4f3VmBsDPfkaB8Lr7FApLgxcdKHMEvc23vMgAj815PcBulMVkG9amBm1MY3vcYkUpsThhtBwZuAVEd0GzKkIz5nhBMboyOYm2q3G0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQP6S3B0GsUbBED2VvQHDIzDANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQAQgBSAE8ASwBFAE4AXABhAGwAaTAeFw0yMDEwMTQxNDA2MDBaFw0yMTEwMTQyMDA2MDBaMB8xHTAbBgNVBAMeFABCAFIATwBLAEUATgBcAGEAbABpMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCiYsOmYtHIe4BhCTe6SXNq1rc14r0MhBFCXvGehGyLNDeBy304vOa/wT5LeYDNUgjTj+xWTh/dWYGwM9+RoHwuvsUCkuDFx0ocwS9zbe8yACPzXk9wG6UxWQb1qYGbUxje9xiRSmxOGG0HBm4BUR3QbMqQjPmeEExujI5ibarcbQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAIKIXzg/ssvWgg/92/FEabPn5JKPjFA7RuccJ9WJNlvhb2WYDNIgRhqUmmbiVCflabEeor2JB2G0oWAX/zot/YegLZgCYHg1V+MFRFAmvgtoWvm2cchsPcvjZicsVYpP/U7HMXRzC9122t1yFLsjnmBh+HZn3hnJKIiPg4XRzrkC</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
