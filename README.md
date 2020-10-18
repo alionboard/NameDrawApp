@@ -1,5 +1,5 @@
 # NameDrawApp
-A random name picker app with 3 modes.<br/>
+A random name draw app with 3 modes.<br/>
 
 1-All) Full Random with all list. This can cause unfair results in the long run.<br/>
 2-Below Average) Draws only those below average count.<br/>
